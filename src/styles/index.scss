@@ -1,0 +1,16 @@
+@import "./custom-variables.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: $customFont;
+    color: $customDarkColor;
+}
+
+#custom-root {
+    height: 100%;
+}

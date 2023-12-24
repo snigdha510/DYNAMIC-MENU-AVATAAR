@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap');
+
+$customFont: "Nunito Sans", sans-serif;
+
+//colors
+$customDarkColor: rgb(29, 29, 29);
+$customLightColor: #fff;
+$customPrimaryColor: rgb(162, 162, 246);
+$customBackgroundColor: rgb(244, 244, 255);
+
+//spacing
+$customMediumSpacing: 16px;
+$customLargeSpacing: 32px;
+
+//border-radius
+$customBorderRadius: 12px;
+
+//header height
+$customHeaderHeight: 100px;
+
+@mixin customBreakpoint($point){
+    @if $point == md {
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}
