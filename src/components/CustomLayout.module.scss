@@ -1,15 +1,20 @@
-@import "../styles/variables.scss";
+// File: CustomLayout.module.scss
 
-.custom-container {
-    height: calc(100vh - #{$headerHeight});
-    background: $bg;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+$custom-header-height: 100px; // Adjust as needed
+$custom-bg: #f4f4ff; // Adjust as needed
+$custom-primary: #3498db; // Adjust as needed
+$custom-border-radius: 12px; // Adjust as needed
 
-    h1 {
-        padding: 1.5rem 2.5rem;
-        background: linear-gradient(220deg, $primary, rgba($primary, 0.5));
-        border-radius: $borderRadius calc(#{$borderRadius} * 10);
-    }
+.main-container {
+  height: calc(100vh - #{$custom-header-height});
+  background: $custom-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    padding: 1.5rem 2.5rem;
+    background: linear-gradient(220deg, $custom-primary, rgba($custom-primary, 0.5));
+    border-radius: $custom-border-radius calc(#{$custom-border-radius} * 10);
+  }
 }
